@@ -3,10 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events - IEEE ComSoc NSSCE</title>
+    <title>Events - ComSoc SBC NSSCE</title>
     <link rel="icon" type="image/png" href="/Images/ieee-comsoc.png"> <!-- Favicon -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: #007bff;
+            color: white;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: #e9ecef;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .hero h2 {
+            margin: 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        main {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #007bff;
+            color: white;
+        }
+        .social-media a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .social-media a:hover {
+            color: #e9ecef;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,11 +95,12 @@
                 <img src="/Images/comsoc-icon.png" alt="ComSoc Icon" class="header-icon left-icon">
                 <img src="/Images/ieee-sb-nssce-icon.png" alt="IEEE SB NSSCE Icon" class="header-icon right-icon">
             </div>
-            <h1>IEEE ComSoc NSSCE</h1>
+            <h1>ComSoc SBC NSSCE</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
+                    <Li><a href="Achievements.html">Achievements</a></Li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -31,45 +112,225 @@
         <section>
             <h2>Upcoming Events</h2>
             <div class="event-card">
-                <h3>Webinar on 5G Technology</h3>
+                <h3>New Event on the way</h3>
                 <p>Date: MM/DD/YYYY</p>
-                <img src="images/webinar-5g.jpg" alt="Webinar on 5G Technology" class="event-image">
+                <img src="images/webinar-5g.jpg" alt="New Event on the way" class="event-image">
                 <a href="#" class="btn">Register</a>
             </div>
             <div class="event-card">
-                <h3>Hackathon</h3>
+                <h3>New Event on the way</h3>
                 <p>Date: MM/DD/YYYY</p>
-                <img src="images/hackathon.jpg" alt="Hackathon" class="event-image">
+                <img src ="images/hackathon.jpg" alt="New Event" class="event-image">
                 <a href="#" class="btn">Register</a>
             </div>
         </section>
 
-        <section>
+        <section>    
             <h2>Past Events</h2>
-            <div class="event-card">
-                <h3>Workshop on Machine Learning</h3>
-                <p>Date: 29/10/2024 & 30/10/2024</p>
-                <img src="Images/Workshop_on_machine_learning.jpeg" alt="Workshop on Machine Learning" class="event-image">
-                <p>Description:IEEE ComSoc SBC NSSCE and IEEE EdSoc SBC NSSCE, in collaboration with CNC Lab, hosted a two-day Machine Learning Workshop on October 29-30, from 4:00 PM to 6:00 PM at CNC Lab. Designed for beginners, the workshop provided an engaging introduction to machine learning concepts with expert insights and hands-on exercises. Dr. Sruthy Manmadhan led the first session, covering supervised, unsupervised, and reinforcement learning, with a focus on supervised learning, data collection, model training, and validation. Participants gained practical experience working with sample datasets. On the second day, Dr. Anuraj Mohan explored classifiers, logistic regression, and neural networks, providing a strong foundation in ML model operations and real-world applications. The event concluded with Dr. Vijitha S presenting a token of appreciation to the speakers. The workshop successfully equipped attendees with foundational ML knowledge, preparing them for advanced applications.</p>
+            <div class="event-card">  
+                <h3>Introduction to LabVIEW</h3>
+                <p>Date: January 16, 2025 | Time: 8:30 PM | Platform: Google Meet</p>
+                <div id="carouselLabVIEW" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/o1.jpeg" class="d-block w-100" alt="Introduction to LabVIEW">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Introduction to LabVIEW</h5>
+                                <p>Dr. Athul Prasad introduces the session on LabVIEW.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/o2.png" class="d-block w-100" alt="LabVIEW Demonstration">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Hands-On Demonstration</h5>
+                                <p>Participants create a basic Virtual Instrument using LabVIEW.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLabVIEW" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselLabVIEW" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p>Description: IEEE ComSoc SBC NSSCE, in collaboration with IEEE ComSoc Kerala Chapter as part of AKComSocSC, conducted a session on "Introduction to LabVIEW" by Athul Prasad, Project Engineer, NCN Technologies, on January 16, 2025, at 8:30 PM via Google Meet. The session introduced students to LabVIEW, a graphical programming platform widely used in automation, data acquisition, and hardware interfacing. Athul Prasad explained its core components, including the Front Panel, Block Diagram, and Virtual Instruments (VIs), with a hands-on demonstration where participants created a basic Virtual Instrument. The event highlighted LabVIEW’s real-world applications in automation, robotics, and scientific research, emphasizing its role in data acquisition and process control. The interactive session received positive feedback, encouraging students to explore LabVIEW for academic projects and career opportunities. This successful collaboration provided a valuable platform for knowledge sharing and skill development in graphical programming and automation technologies.</p>
             </div>
-            <div class="event-card">
+
+            <div class="event-card">  
+                <h3>WORKSHOP ON MACHINE LEARNING</h3>
+                <p>Date: 29/10/2024 & 30/10/24</p> 
+                <div id="carouselWorkshopML" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/Workshop_on_machine_learning.jpeg" class="d-block w-100" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/ml_1.jpeg" class="d-block w-100" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/ml_2.jpeg" class="d-block w-100" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/ml_3.jpeg" class="d-block w-100" alt="Fourth slide">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselWorkshopML" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselWorkshopML" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <p>Description: IEEE ComSoc SBC NSSCE and IEEE EdSoc SBC NSSCE, in collaboration with CNC Lab, hosted a two-day Machine Learning Workshop on October 29 -30, from 4:00 PM to 6:00 PM at CNC Lab. Designed for beginners, the workshop provided an engaging introduction to machine learning concepts with expert insights and hands-on exercises. Dr. Sruthy Manmadhan led the first session, covering supervised, unsupervised, and reinforcement learning, with a focus on supervised learning, data collection, model training, and validation. Participants gained practical experience working with sample datasets. On the second day, Dr. Anuraj Mohan explored classifiers, logistic regression, and neural networks, providing a strong foundation in ML model operations and real-world applications. The event concluded with Dr. Vijitha S presenting a token of appreciation to the speakers. The workshop successfully equipped attendees with foundational ML knowledge, preparing them for advanced applications.</p>
+            </div>
+
+            <div class="event-card">  
+                <h3>Generative AI: Revolutionizing the Communication Landscape</h3>
+                <p>Date: October 16, 2024 | Time: 8 PM | Platform: Online</p>
+                <div id="carouselGenerativeAI" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/a1.jpeg" class="d-block w-100" alt="Generative AI Session Image 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Introduction to Generative AI</h5>
+                                <p>Dr. Anjana P Das, AI Specialist at Tata Elxsi, introduces the session.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/a2.jpeg" class="d-block w-100" alt="Generative AI Session Image 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Key Topics Discussed</h5>
+                                <p>Exploring AI models like neural networks, transformers, and GANs.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/a3.jpeg" class="d-block w-100" alt="Generative AI Session Image 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Interactive Discussions</h5>
+                                <p>Participants engage in discussions and Q&A sessions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGenerativeAI" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGenerativeAI" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p>Description: On October 16, 2024, at 8 PM, IEEE ComSoc SBC NSSCE hosted an online session on "Generative AI: Revolutionizing the Communication Landscape" by Dr. Anjana P Das, AI Specialist at Tata Elxsi. The session explored how Generative AI is transforming engineering communication, network optimization, and content creation. Key topics included AI models like neural networks, transformers, and GANs, along with applications in text generation, image synthesis, and music creation. Dr. Anjana also highlighted AI’s role in marketing, automation, and customer engagement. The event featured interactive discussions, practical demonstrations, and a Q&A session, allowing participants to delve deeper into AI-driven innovations. A quiz at the end reinforced key concepts in an engaging way. This session successfully introduced attendees to AI’s potential in communication and engineering, encouraging further exploration through future workshops.</p>
+            </div>
+
+            <div class="event-card">  
                 <h3>6G Unleashed</h3>
                 <p>Date: 30/07/2024</p>
-                <img src="Images/6G_Unleashed.jpg" alt="6G Unleashedp" class="event-image">
-                <p>Description: On July 30, 2024, IEEE ComSoc SBC NSSCE hosted an online session, "6G Unleashed: The Future of Wireless Communication and Beyond," led by Dr. Ayappasamy, Research Engineer and IEEE Member from Digital University Kerala. The session explored the evolution of wireless communication from 2G to 6G, highlighting 5G limitations and advancements like Visible Light Communication (VLC), Intelligent Reflecting Surfaces (IRS), ultra-massive MIMO, semantic communication, and Terahertz (THz) technology. Combining theory with hands-on experiments, the session provided valuable insights into 6G’s potential, and the interactive discussions made it an engaging experience, earning great feedback from attendees</p>
+                <div id="carousel6GUnleashed" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/6G_Unleashed.jpg" class="d-block w-100" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/6g_1.png" class="d-block w-100" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/6g_2.jpg" class="d-block w-100" alt="Third slide">
+                        </ div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel6GUnleashed" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel6GUnleashed" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <p>Description: On July 30, 2024, IEEE ComSoc SBC NSSCE hosted an online session, "6G Unleashed: The Future of Wireless Communication and Beyond," led by Dr. Ayappasamy, Research Engineer and IEEE Member from Digital University Kerala. The session explored the evolution of wireless communication from 2G to 6G, highlighting 5G limitations and advancements like Visible Light Communication (VLC), Intelligent Reflecting Surfaces (IRS), ultra-massive MIMO, semantic communication, and Terahertz (THz) technology. Combining theory with hands-on experiments, the session provided valuable insights into 6G’s potential, and the interactive discussions made it an engaging experience, earning great feedback from attendees.</p>
+                </div>
             </div>
-            
+
+            <div class="event-card">  
+                <h3>SPECTRUM: Unveiling the Power of Radio Communication</h3>
+                <p>Date: March 29, 2024 | Time: 7 PM | Platform: Online</p>
+                <div id="carouselSpectrum" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/s1.png" class="d-block w-100" alt="Spectrum Session Image 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Introduction to Radio Communication</h5>
+                                <p>Dr. Ghandhiraj R introduces the session on radio communication fundamentals.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/s2.jpg" class="d-block w-100" alt="Spectrum Demonstration">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Practical Demonstrations</h5>
+                                <p>Participants engage with real-time tools like WebSDR and Flight Radar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSpectrum" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSpectrum" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p>Description: IEEE ComSoc SBC NSSCE conducted an online session, "SPECTRUM: Unveiling the Power of Radio Communication," on March 29, 2024, at 7 PM, led by Dr. Ghandhiraj R, Associate Professor, Amrita Vishwa Vidyapeetham, Coimbatore. The session covered radio communication fundamentals, real-time tools like WebSDR and Flight Radar, and software such as GNU Radio for signal processing. Topics included Fourier series, filtering techniques, and impulse response analysis, with practical demonstrations. Participants gained valuable insights into modern radio technologies and resources for further learning, making it an engaging and informative session.</p>
+            </div>
+
+            <div class="event-card">  
+                <h2>Drone Craft</h2>
+                <div id="carouselDroneCraft" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/drone.jpg" class="d-block w-100" alt="First slide">
+                            <p>Description</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/drone_1.jpg" class="d-block w-100" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/DRONE_2.jpg" class="d-block w-100" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/DRONE_3.jpg" class="d-block w- 100" alt="Fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/drone_5.jpg" class="d-block w-100" alt="Fifth slide">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDroneCraft" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDroneCraft" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <p>Workshop on Drone Craft 📅 Date: 04/03/2024 | ⏰ Time: 9:00 AM – 5:00 PM 📍 Host: IEEE SB NSSCE
+                        IEEE SB NSSCE, in collaboration with Aero Knotz Drone India Pvt. Ltd., PTIB, and various student chapters, conducted a hands-on Drone Craft Workshop on March 4, 2024. The session covered drone technology, types, components, and real-world applications in agriculture, surveillance, filmmaking, and disaster management.
+                        Participants, guided by mentors, assembled and flew drones using provided kits, gaining practical experience in UAV design and operation. Interactive discussions highlighted drones’ role in modern problem-solving, fostering innovation and collaboration.</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 IEEE ComSoc NSSCE. All rights reserved.</p>
+            <p>&copy; 2025 ComSoc SBC NSSCE. All rights reserved.</p>
             <div class="social-media">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/ieeecomsoc" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </footer>

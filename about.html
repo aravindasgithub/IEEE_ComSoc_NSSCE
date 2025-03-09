@@ -3,10 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - IEEE ComSoc NSSCE</title>
+    <title>About Us - ComSoc SBC NSSCE</title>
     <link rel="icon" type="image/png" href="/Images/ieee-comsoc.png"> <!-- Favicon -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: #007bff;
+            color: white;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: #e9ecef;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .hero h2 {
+            margin: 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        main {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #007bff;
+            color: white;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            color: #e9ecef;
+        }
+
+        /* Team Members Styles */
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start; /* Align items to the start */
+            list-style-type: none;
+            padding: 0;
+            margin: 0; /* Ensure no margin on the ul */
+        }
+
+        .team-members li {
+            flex: 0 1 30%; /* Default to 3 items per row */
+            margin: 10px; /* Increased margin for spacing */
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .team-members li {
+                flex: 0 1 45%; /* 2 items per row on tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-members li {
+                flex: 0 1 100%; /* 1 item per row on mobile */
+            }
+        }
+
+        .team-photo {
+            width: 100px; /* Set a fixed width */
+            height: 100px; /* Set a fixed height */
+            border-radius: 50%; /* Makes the images circular */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,11 +136,12 @@
                 <img src="/Images/comsoc-icon.png" alt="ComSoc Icon" class="header-icon left-icon">
                 <img src="/Images/ieee-sb-nssce-icon.png" alt="IEEE SB NSSCE Icon" class="header-icon right-icon">
             </div>
-            <h1>IEEE ComSoc NSSCE</h1>
+            <h1>ComSoc SBC NSSCE</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
+                    <li><a href="Achievements.html">Achievements</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -44,53 +166,77 @@
             <p>To bring the world together in harmony through communications and networking technology research, application, education, and incubation of new ideas.</p>
         </section>
 
-        <h3>Team Members</h3>
-        <ul>
+        <h3>Meet Our Team</h3>
+        <ul class="team-members">
             <li>
-                <img src="/Images/dr-sreeleja.jpg" alt="Dr. Sreeleja" class="team-photo"> Dr. Sreeleja - Advisor
+                <img src="/Images/dr-sreeleja.jpg" alt="Dr. Sreeleja" class="team-photo"> 
+                <p>Dr. Sreeleja</p>
+                <p>Advisor</p>
             </li>
             <li>
-                <img src="/Images/abhina.jpg" alt="Abhina" class="team-photo"> Abhina - Mentor
+                <img src="/Images/abhina.jpg" alt="Abhina" class="team-photo"> 
+                <p>Abhina</p>
+                <p>Mentor</p>
             </li>
             <li>
-                <img src="/Images/neha-s.jpg" alt="Neha S" class="team-photo"> Neha S - Chair
+                <img src="/Images/neha-s.jpg" alt="Neha S" class="team-photo"> 
+                <p>Neha S</p>
+                <p>Chair</p>
             </li>
             <li>
-                <img src="/Images/aravind-as.jpg" alt="Aravind A.S" class="team-photo"> Aravind A.S - Vice Chair
+                <img src="/Images/aravind-as.jpg" alt="Aravind A.S" class="team-photo"> 
+                <p>Aravind A.S</p>
+                <p>Vice Chair</p>
             </li>
             <li>
-                <img src="/Images/adithyan-ps.jpg" alt="Adithyan P.S" class="team-photo"> Adithyan P.S - Secretary
+                <img src="/Images/adithyan-ps.jpg" alt="Adithyan P.S" class="team-photo"> 
+                <p>Adithyan P.S</p>
+                <p>Secretary</p>
             </li>
             <li>
-                <img src="/Images/adharsh.jpg" alt="Adharsh" class="team-photo"> Adharsh - Treasurer
+                <img src="Images/adharsh.jpg" alt="Adharsh" class="team-photo"> 
+                <p>Adharsh</p>
+                <p>Treasurer</p>
             </li>
             <li>
-                <img src="/Images/msridevi.jpg" alt="M Sridevi" class="team-photo"> M Sridevi - Wie Coordinator
+                <img src="/Images/msridevi.jpg" alt="M Sridevi" class="team-photo"> 
+                <p>M Sridevi</p>
+                <p>Wie Coordinator</p>
             </li>
             <li>
-                <img src="/Images/akshara-s-prasad.jpg" alt="Akshara S Prasad" class="team-photo"> Akshara S Prasad - Project Coordinator Comsoc HTB
+                <img src="/Images/akshara-s-prasad.jpg" alt="Akshara S Prasad" class="team-photo"> 
+                <p>Akshara S Prasad</p>
+                <p>Project Coordinator Comsoc HTB</p>
             </li>
             <li>
-                <img src="/Images/parvathi-madhusoodanan.jpg" alt="Parvathi Madhusoodanan" class="team-photo"> Parvathi Madhusoodanan - Core Member
+                <img src="/Images/parvathi-madhusoodanan.jpg" alt="Parvathi Madhusoodanan" class="team-photo"> 
+                <p>Parvathi Madhusoodanan</p>
+                <p>Core Member</p>
             </li>
             <li>
-                <img src="/Images/bliss-shite.jpg" alt="Bliss Shite" class="team-photo"> Bliss Shite - Core Member
+                <img src="/Images/bliss-shite.jpg" alt="Bliss Shite" class="team-photo"> 
+                <p>Bliss Shite</p>
+                <p>Core Member</p>
             </li>
             <li>
-                <img src="/Images/aswin-k-s.jpg" alt="Aswin K.S" class="team-photo"> Aswin K.S - Core Member
+                <img src="/Images/aswin-k-s.jpg" alt="Aswin K.S" class="team-photo"> 
+                <p>Aswin K.S</p>
+                <p>Core Member</p>
             </li>
             <li>
-                <img src="/Images/pranav-p-nair.jpg" alt="PRANAV P NAIR" class="team-photo"> PRANAV P NAIR - Core Member
+                <img src="/Images/pranav-p-nair.jpg" alt="PRANAV P NAIR" class="team-photo"> 
+                <p>PRANAV P NAIR</p>
+                <p>Core Member</p>
             </li>
         </ul>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 IEEE ComSoc NSSCE. All rights reserved.</p>
+            <p>&copy; 2025 ComSoc SBC NSSCE. All rights reserved.</p>
             <div class="social-media">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href ="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>

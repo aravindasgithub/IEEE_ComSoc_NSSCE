@@ -17,8 +17,8 @@
             background-color: #f4f4f4;
         }
         .container {
-            width: 90%;
-            max-width: 1200px;
+            width: 90%; /* Increased width for better mobile view */
+            max-width: 1200px; /* Maximum width for larger screens */
             margin: auto;
             padding: 20px;
         }
@@ -34,10 +34,12 @@
         nav ul {
             list-style: none;
             padding: 0;
+            display: flex; /* Use flexbox for horizontal layout */
+            justify-content: center; /* Center the navigation links */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
         }
         nav ul li {
-            display: inline;
-            margin: 0 15px;
+            margin: 0 15px; /* Space between links */
         }
         nav ul li a {
             color: white;
@@ -87,6 +89,30 @@
         .social-media a:hover {
             color: #e9ecef;
         }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column; /* Stack navigation links vertically */
+                align-items: center; /* Center links */
+            }
+            nav ul li {
+                margin: 5px 0; /* Space between links */
+            }
+            .team-photo {
+                width: 80px; /* Smaller size for mobile */
+                height: 80px; /* Smaller size for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 2em; /* Smaller font size for mobile */
+            }
+            .btn {
+                padding: 8px 16px; /* Smaller button size for mobile */
+            }
+        }
     </style>
 </head>
 <body>
@@ -101,7 +127,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <Li><a href="Achievements.html">Achievements</a></Li>
+                    <li><a href="Achievements.html">Achievements</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -111,16 +137,27 @@
 
     <main class="container">
         <section>
-            <h2>Contact Us</h2>
-            <p>If you have any questions or inquiries, feel free to reach out to us!</p>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="79745a37-e58e-4f5e-8183-6983b4180811">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <div id="feedback" aria-live="polite"></div> <!-- Feedback element -->
+            <div style="text-align: center; margin: 20px; background-color: #f7f7f7; padding: 20px; border-radius: 10px;">
+                <h2 style="font-family: 'Arial', sans-serif; color: #ffb300;">🏆 Received a Remarkable Reward 🏆</h2>
+                <p style="font-family: 'Arial', sans-serif; font-weight: bold; color: #222;">IEEE ComSoc SBC NSSCE</p>
+                <p style="font-family: 'Arial', sans-serif; font-size: 24px; font-weight: bold; color: #222;">
+                    Received a funding of <span style="border: 2px solid; padding: 0 5px;">$350</span>
+                </p>
+                <p style="font-family: 'Arial', sans-serif;">As a part of Q4 ComSoc Student Branch Funding</p>
+                <img src="Images/funding-award.jpg" alt="Congratulations for receiving reward" style="width: 300px; height: auto; margin-top: 20px;">
+            </div>
+        </section>
+
+        <section>
+            <div style="text-align: center; margin: 20px; background-color: #f7f7f7; padding: 20px; border-radius: 10px;">
+                <h2 style="font-family: 'Arial', sans-serif; color: #ffb300;">🏆 Outstanding Student Branch Chapter 🏆</h2>
+                <p style="font-family: 'Arial', sans-serif; font-weight: bold; color: #222;">IEEE ComSoc SBC NSSCE</p>
+                <p style="font-family: 'Arial', sans-serif; font-size: 24px; font-weight: bold; color: #222;">
+                    Recognized as an Outstanding Student Branch Chapter for the year 2024
+                </p>
+                <p style="font-family: 'Arial', sans-serif;">For exceptional contributions to the community and student engagement.</p>
+                <img src="Images/Aw.jpeg" alt="Outstanding Student Branch Chapter" style="width: 300px; height: auto; margin-top: 20px;">
+            </div>
         </section>
     </main>
 

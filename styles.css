@@ -8,14 +8,13 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%; /* Increased width for better mobile view */
     max-width: 1200px; /* Maximum width for larger screens */
     margin: auto;
     overflow: hidden;
 }
 
-/* Header Styles */
-header {
+.header {
     background: #007BFF; /* Sky blue */
     color: #fff;
     padding: 20px 0; /* Increased padding for better spacing */
@@ -52,6 +51,7 @@ nav ul {
     padding: 0;
     display: flex; /* Use flexbox for horizontal layout */
     justify-content: center; /* Center the navigation links */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 nav ul li {
@@ -190,4 +190,84 @@ form button {
 
 form button:hover {
     background: #0056b3; /* Darker blue on hover */
+}
+
+/* Carousel Styles */
+.carousel {
+    margin: 20px 0; /* Space above and below the carousel */
+}
+
+.carousel-inner {
+    max-height: 400px; /* Set a maximum height for the carousel */
+    overflow: hidden; /* Hide overflow to maintain the standard size */
+}
+
+.carousel-inner img {
+    width: 100%; /* Make images responsive */
+    height: 400px; /* Set a fixed height for images */
+    object-fit: contain; /* Ensure the entire image is visible without cropping */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjust width of control buttons */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007BFF; /* Background color for control icons */
+    border-radius: 50%; /* Round control icons */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 123, 255, 0.5); /* Slightly transparent blue on hover */
+}
+
+.carousel-indicators {
+    bottom: 10px; /* Position indicators */
+}
+
+.carousel-indicators li {
+    background-color: #007BFF; /* Color for indicators */
+}
+
+.carousel-indicators .active {
+    background-color: #0056b3; /* Darker blue for active indicator */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Increase width for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center links */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Space between links */
+    }
+
+    .team-photo {
+        width: 80px; /* Smaller size for mobile */
+        height: 80px; /* Smaller size for mobile */
+    }
+
+    .event-card {
+        margin: 5px 0; /* Reduce margin for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2em; /* Smaller font size for mobile */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Smaller button size for mobile */
+    }
 }
